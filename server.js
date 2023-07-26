@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 // api route
-app
+// looking to extend the functionality of this app
 
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
