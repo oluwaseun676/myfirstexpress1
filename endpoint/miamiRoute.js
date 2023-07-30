@@ -27,4 +27,23 @@ router.get("/",async(req,res)=>{
     console.log(err);
  }
 })
+router.get("/services",async(req,res)=>{
+    try{
+       res.setHeader('Content-Type', 'application/json');
+       res.status(200).json({
+           error:false,
+           message:"Welcome to the menu page",
+           status:200,
+           data:null
+       });
+    }catch(err){
+       res.status(500).json({
+           error:true,
+           message:"Error",
+           cause:err,
+           data:null
+       })
+       console.log(err);
+    }
+   })
 module.exports = router;
