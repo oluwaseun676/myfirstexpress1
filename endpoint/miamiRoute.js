@@ -27,7 +27,7 @@ router.get("/",async(req,res)=>{
     console.log(err);
  }
 })
-router.get("/services",async(req,res)=>{
+router.get("/menu",async(req,res)=>{
     try{
        res.setHeader('Content-Type', 'application/json');
        res.status(200).json({
