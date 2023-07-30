@@ -10,7 +10,7 @@ requestRouter.get("/about", async (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "html", "about.html"));
   return;
 });
-requestRouter.get("/services", async (req, res) => {
+requestRouter.get("/menu", async (req, res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "html", "services.html"));
     return;
   });
