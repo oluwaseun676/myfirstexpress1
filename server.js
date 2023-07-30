@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     //const body = `<h2>Welcome To Ore's Relaxation Hub</h2>
     //   <p>Your one stop relaxation hub</p>`;
   //res.send(body);
-    res.write(Home)
+    res.sendFile(Home)
 });
 
 // api route
