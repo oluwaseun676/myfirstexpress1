@@ -3,7 +3,7 @@ const about = document.querySelector(".about");
 const services = document.querySelector(".services");
 services.addEventListener("click", (evt) =>{
   evt.preventDefault()
-  window.location.href = "/frontend/menu"
+  window.location.href = "/frontend/services"
 })
 about.addEventListener("click",(evt)=>{
   evt.preventDefault();
