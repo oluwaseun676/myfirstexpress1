@@ -43,7 +43,6 @@ router.get("/services",async(req,res)=>{
            cause:err,
            data:null
        })
-       console.log(err);
-    }
+	}
    })
 module.exports = router;
