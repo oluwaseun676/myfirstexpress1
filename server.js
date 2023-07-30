@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.set("Content-Type", "text/html");
   res.status(200);
   res.statusMessage = "Everything is okay with the request";
-    const body = `<h2>Welcome to miami</h2>
+    const body = `<h2>Welcome To Ore's Relaxation Hub</h2>
        <p>Your one stop relaxation hub</p>`;
   res.send(body);
 });
