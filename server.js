@@ -4,7 +4,6 @@ const body_parser = require("body-parser");
 const frontend = require("./html_route");
 const userRoute = require("./endpoint/miamiRoute");
 const PORT = 3180;
-const Home = require("./frontend/html/miami.html");
 
 const app = express();
 app.use(body_parser.json());
@@ -17,10 +16,9 @@ app.get("/", (req, res) => {
   res.set("Content-Type", "text/html");
   res.status(200);
   res.statusMessage = "Everything is okay with the request";
-    //const body = `<h2>Welcome To Ore's Relaxation Hub</h2>
-    //   <p>Your one stop relaxation hub</p>`;
-  //res.send(body);
-    res.sendFile(Home)
+    const body = `<h2>Welcome To Ore's Relaxation Hub</h2>
+       <p>Your one stop relaxation hub</p>`;
+  res.send(body);
 });
 
 // api route
