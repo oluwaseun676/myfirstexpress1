@@ -10,11 +10,12 @@
   box-sizing: border-box;
 }
 @media screen and (-webkit-device-pixel-ratio: 1) {
- body {
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-   }
+.container {
+  width: 1200px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+}
         }
 #main-header {
   background-color: #35424a;
@@ -25,10 +26,7 @@
   height: 110px; 
   border-bottom: 5px solid coral;
 }
- .container {
-  width: 90%;
-  margin: auto;
-} 
+ 
 
 #branding{
   float: left;
