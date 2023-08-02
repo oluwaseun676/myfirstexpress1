@@ -133,12 +133,12 @@
       </div>
   </section>
     <section>
-        <article>
+        <article >
           <h1>About Us</h1>
           <!--Begin row-->
           <div class="row">
             <!--Begin col-->
-            <div class="column">
+            <div class="column" style="margin-bottom: 56px; margin-top: 20px;">
               <p>
                 Based in Lagos, Nigeria, Ore's Luxury Hub is a family owned Mediterranean Hotel, focused on delivering it's customers with the best and most luxurious Items.
               </p>
@@ -186,6 +186,19 @@
         </article>
       </section>    
 </body>
+<script>
+const home = document.querySelector(".home");
+const services = document.querySelector(".services");
+services.addEventListener("click", (evt) =>{
+  evt.preventDefault()
+  window.location.href = "/menu"
+})
+  home.addEventListener("click",(evt)=>{
+  evt.preventDefault();
+  window.location.href = "";
+}
+)
+</script>
 </html>
 
   
