@@ -14,13 +14,12 @@
 }
 
 @media screen and (-webkit-device-pixel-ratio: 1) {
- body {
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-   }
-
-
+.container {
+  width: 1200px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
+}
         }
 .input{
   padding: 8px;
@@ -97,6 +96,10 @@
   padding-right: 12px;
   margin-left: 17px;
 }
+p{
+margin-bottom:17px;
+ line-height: 1.5;
+}
 </style>
 </head>
 <body>
@@ -138,7 +141,7 @@
           <!--Begin row-->
           <div class="row">
             <!--Begin col-->
-            <div class="column" style="margin-bottom: 56px; margin-top: 20px;">
+            <div class="column" style="margin-bottom: 56px; margin-top: 28px;">
               <p>
                 Based in Lagos, Nigeria, Ore's Luxury Hub is a family owned Mediterranean Hotel, focused on delivering it's customers with the best and most luxurious Items.
               </p>
