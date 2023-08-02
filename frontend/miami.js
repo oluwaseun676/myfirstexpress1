@@ -12,6 +12,6 @@ about.addEventListener("click",(evt)=>{
 })
 home.addEventListener("click",(evt)=>{
   evt.preventDefault();
-  window.location.href = "/frontend/";
+  window.location.href = "/frontend";
 }
 )
